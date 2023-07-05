@@ -259,7 +259,7 @@ executable : $(objects)
 # Check the documentation for more details.
 # These are just variable names. You can use $(@) just as fine, for instance.
 auto: prereq1 prereq2  
-	@echo "@: $@" The target name (or, in the case of a pattern rule, the file that triggered the target).
+	@echo "@: $@" # The target name (or, in the case of a pattern rule, the file that triggered the target).
 	@echo "<: $<" # The name of the first prerequisite
 	@echo "?: $?" # The names of all the prerequisites that are newer than the target, separated by spaces. If the target does not exist, all prerequisites will be included.
 	@echo "?: $^" # The names of all the prerequisites, with spaces between them.
